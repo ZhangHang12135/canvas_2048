@@ -82,8 +82,11 @@ document.onkeydown = function(event){
     }else if(e && e.keyCode == 40){
         gameover = updateArr(digital,"2");
         drawBack();
+    }else{
+        gameover = true;
     }
     if(!gameover){
+        alert("Game over");
         digital = init(4,4);
         drawBack();
     }
